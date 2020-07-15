@@ -7,6 +7,33 @@
 </head>
 <body>
     <h1> Hello Django View  </h1>
+
+    <div>
+        <p>
+            <h2> Name : {{ name }} </h2>
+        </p>
+
+        <p>
+            <h2> Country  : {{ country }} </h2>
+        </p>
+    </div>
+
+
+
+    <div>
+        {% for num in list %}
+        {% if num <= 3 %}
+        
+        <h{{ num }}>Life is cold; So Nice  for me  </h {{ num }}>
+
+        {% else %}
+        <h{{ num }}>Life is diffcult us  </h {{ num }}>
+
+        {% endif  %}
+        {% endfor  %}
+       
+
+    </div>
     
 </body>
 </html>
