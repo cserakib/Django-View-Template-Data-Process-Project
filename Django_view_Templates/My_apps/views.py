@@ -12,6 +12,7 @@ class HomeView(TemplateView):
 
         list = [1,2,3,4,5,6]
         context['list'] = list 
-
-
         return context
+
+class AboutView(TemplateView):
+    template_name = "about.html"
