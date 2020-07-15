@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Django Template Views Project </title>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a> || <a href="{% url 'about' %}"> About </a>
+    </nav>
+    
+    {% block body  %}
+
+
+    {% endblock %}
+    
+</body>
+</html>
